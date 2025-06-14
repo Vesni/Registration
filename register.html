@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+<style>
+body{
+
+font-family :'Segoe UI';
+background-color: rgb(196, 255, 235);
+
+}
+form{
+    background : #ffffff;
+    padding : 40px;
+
+    max-width : 600px;
+    margin : auto;
+    border-radius : 14px;
+    box-shadow : 0px 8px 20px rgba(0,0,0,0.1)
+}
+
+input,select,textarea{
+    width : 100%;
+
+    margin : 10px 0px;
+    padding : 10px;
+    border : 1px solid rgb(9, 25, 107);
+    border-radius : 5px;
+
+}
+button{
+    background-color: #041295;
+    color: white;
+    border-radius : 5px;
+    width : 100%;
+    padding : 12px;
+    border : none;
+}
+
+h2 {
+    text-align : center;
+}
+
+</style>
+
+
+</head>
+<body>
+    
+<form action = "register.php" method = POST>
+      <h1> Student Registration Page</h1>
+<label> Name:</label>
+<input type = "text" name = "name" required>
+
+<label> Age : </label>
+<input type = "number" name = "age" required>
+
+<label> Gender : </label>
+
+<select name = "gender" required>
+
+<option value ="">---Select a option---</option>
+<option> Male </option>
+<option> Female </option>
+
+    </select>
+<label> Email: </label>
+<input type = "email" name = "email" required>
+
+<label> Phone: </label>
+<input type = "text" name = "phone" required>
+
+<label> Course: </label>
+<input type = "text" name = "course" required>
+
+<label> Address: </label>
+<textarea name = "address" rows = "5" required></textarea>
+
+<button type = "submit"> Register</button>
+
+</form>
+
+
+
+
+</body>
+</html>
